@@ -1,0 +1,24 @@
+<div>
+    <h2>Welcome to Warehouse Management System</h2>
+
+    <p><a href="/">Home Page</a></p>
+
+    <div th:each="category : ${categories}" >
+    <a th:text="'List of categories: ' + ${category}" th:href="'/browseByCategory/' + ${category}"> </a>
+    </div>
+
+    <h3>All Categories List  <span th:text="'(Count: ' + ${categoryCount} + ')'"></span></h3>
+
+    <table>
+        <tbody>
+        <tr th:each="item : ${categories}">
+            <td th:text="${category}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+    </div>
+
+</div>

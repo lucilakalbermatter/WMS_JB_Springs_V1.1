@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <styLe>
+        .label{
+            width:10%;
+            display:inline-block;
+            margin:5px;
+        }
+        .input{
+            border-radius:5px;
+            height:30px;
+            margin-bottom:10px
+        }
+        .submit{
+            margin-left:13%;
+        }
+    </style>
+</head>
+<div>
+    <h1>Welcome to Warehouse Management System</h1>
+
+    <p><a href="/">Home Page</a></p>
+
+<h2>Search items</h2>
+<form >
+    <fieldset>
+        <label class="label">Item name</label>
+        <input class="input" type="text" th:field="*{name}"/><br/>
+        <button class="submit" type="submit">Search</button>
+    </fieldset>
+</form>
+</html>
